@@ -1,34 +1,49 @@
 ## 1. Cách chạy chương trình
 
-Bước 1: Truy cập repository GitHub:
+Bước 1: Tạo thư mục bài tập
 
-https://github.com/voduyanhgalaxys4-code/Bt02
+Mở Terminal hoặc PowerShell, di chuyển đến thư mục chứa bài tập và tạo thư mục Bt02:
 
-Bước 2: Chọn Code → Download ZIP để tải mã nguồn về máy tính.
+mkdir Bt02
+cd Bt02
 
-Bước 3: Giải nén tập tin ZIP vừa tải về.
+Bước 2: Tạo tập tin bai02.js
 
-Bước 4: Mở Visual Studio Code, chọn File → Open Folder và mở thư mục chứa tập tin bai02.js.
+Sử dụng lệnh:
 
-Bước 5: Chọn Terminal → New Terminal để mở Terminal.
+notepad bai02.js
 
-Bước 6: Kiểm tra Node.js đã được cài đặt:
+Viết mã nguồn tạo Web Server bằng module http, xử lý các đường dẫn /, /about và trả về trạng thái 404 đối với đường dẫn không tồn tại.
 
-node -v
+Bước 3: Chạy chương trình
 
-Bước 7: Chạy chương trình bằng lệnh:
+Tại Terminal, thực hiện lệnh:
 
 node bai02.js
 
-Bước 8: Khi Terminal hiển thị thông báo server đang chạy, mở trình duyệt và truy cập các địa chỉ:
+Sau khi chạy thành công, Web Server hoạt động tại cổng 3000.
 
-Trang chủ: http://localhost:3000/
+Bước 4: Kiểm tra trên trình duyệt
 
-Trang giới thiệu: http://localhost:3000/about
+Mở trình duyệt và truy cập các địa chỉ sau:
 
-Trang không tồn tại: http://localhost:3000/abc
+Trang chủ:
 
-Lưu ý: Cần cài đặt Node.js trước khi thực hiện. Không cần cài đặt thêm thư viện bên ngoài.
+http://localhost:3000
+
+Kết quả: Hiển thị lời chào và mã sinh viên CDCNTT18A04.
+
+Trang giới thiệu:
+
+http://localhost:3000/about
+
+Kết quả: Hiển thị thông tin giới thiệu bản thân.
+
+Đường dẫn không tồn tại:
+
+http://localhost:3000/abc
+
+Kết quả: Server trả về mã trạng thái HTTP 404 và thông báo không tìm thấy trang.
 
 ## 2. Kết quả thực hiện
 
